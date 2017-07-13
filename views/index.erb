@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: <%= back_color %>;
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    <p>
+      The SECRET NUMBER is <%= number %>
+      
+    </p>
+    
+  <form>
+    <input type='text' name='guess' />
+    <input type='submit' value='Guess!' />
+    <input type="checkbox" name="cheat" value="true" />cheat mode?
+  </form>
+  
+  <p>
+    your guess is <%= params['guess'] %>
+    <br>
+      
+        <%= message %>
+     
+  </p>
+  
+  <p>
+    <%= cheater %>
+  </p>
+  
+  </body>
+</html>
